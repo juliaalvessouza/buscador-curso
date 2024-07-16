@@ -1,0 +1,20 @@
+{
+    "name": "julia/buscador-curso",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "autoload": {
+        "psr-4": {
+            "Julia\\BuscadorCurso\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Julia Souza",
+            "email": "julia.souza@ciag.org.br"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.8",
+        "symfony/dom-crawler": "^6.0",
+        "symfony/css-selector": "^7.1"
+    }
+}

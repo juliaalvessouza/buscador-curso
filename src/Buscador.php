@@ -9,12 +9,14 @@ class Buscador {
     private $httpClient;
     private $crawler;
 
-    public function __construct(ClientInterface $httpClient, Crawler $crawler ) {
+    public function __construct(ClientInterface $httpClient, Crawler $crawler ) 
+    {
         $this->httpClient = $httpClient;
         $this->crawler = $crawler;
     }
 
-    public function getCursosFromUrl(string $url) : array {
+    public function getCursosFromUrl(string $url) : array 
+    {
         $resposta = $this->httpClient->request("GET", $url);
 
         $html = $resposta->getBody();
